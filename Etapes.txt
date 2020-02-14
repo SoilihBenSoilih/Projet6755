@@ -1,0 +1,3 @@
+-Prendre l'exemple du prof et l'encoder sur featureIDE
+-Encoder le modèle avec Alloy
+-Faire une vérification des propriétés avec Alloy
