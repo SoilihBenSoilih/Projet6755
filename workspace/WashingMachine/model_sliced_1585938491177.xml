@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<struct>
+		<and abstract="true" mandatory="true" name="__root__">
+			<and abstract="true" mandatory="true" name="WashingMachine">
+				<and abstract="true" mandatory="true" name="Wash">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Delay"/>
+					<feature name="Heat"/>
+					<feature name="Dry"/>
+				</and>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<conj>
+				<disj>
+					<var>Delay</var>
+					<var>Heat</var>
+				</disj>
+				<not>
+					<conj>
+						<var>Delay</var>
+						<var>Heat</var>
+					</conj>
+				</not>
+			</conj>
+		</rule>
+	</constraints>
+</featureModel>
