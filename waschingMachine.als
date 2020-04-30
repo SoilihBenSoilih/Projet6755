@@ -101,20 +101,4 @@ fact {
 		else (( StartPrewash not in p.domain. transition ) and (EndPrewash not in p.domain. transition )) 
 }
 
-// élimination des cycles.
-fact {
-	all f1 , f2 : FeatureModel | 
-		f1. feature = f2. feature => f1= f2
-}
-fact {
-	all d1 , d2 : DomainModel | 
-		d1. transition = d2. transition => d1=d2
-}
-fact {
-	all t1 , t2 : Transition | 
-		(t1. source = t2. source ) and (t1. target = t2. target) =>t1=t2
-}
-fact {
-	all p1 , p2 : Product | 
-		(p1. feature = p2. feature ) and (p1.domain=p2.domain)=> p1 = p2
-}
+
