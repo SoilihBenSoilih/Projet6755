@@ -10,7 +10,7 @@
     </component>
     <link name="startDying" departure="03" arrival="04"/>
     <link name="endWash" departure="03" arrival="05"/>
-    <component id="04" name="Dying"/> 
+    <component id="04" name="Drying"/> 
     <link name="endDying" departure="04" arrival="05"/>
     <component id="05" name="Unlocking"/>
 </package>
