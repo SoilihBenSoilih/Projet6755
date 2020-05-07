@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package>
+    <component  id="01" name="Locking"/>
+    <link name="startPrewash" departure="01" arrival="02"/>
+    <link name="startWash" departure="01" arrival="03"/>
+    <component id="02" name="Waiting"/>
+    <link name="endPrewash" departure="02" arrival="03"/>
+    <component id="03" name="Washing">
+                <method>EntryTempCheck</method>
+    </component>
+    <link name="startDying" departure="03" arrival="04"/>
+    <link name="endWash" departure="03" arrival="05"/>
+    <component id="04" name="Dying"/> 
+    <link name="endDying" departure="04" arrival="05"/>
+    <component id="05" name="Unlocking"/>
+</package>
