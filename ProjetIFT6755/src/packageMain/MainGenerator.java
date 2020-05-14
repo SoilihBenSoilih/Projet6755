@@ -39,7 +39,7 @@ public class MainGenerator {
 		codeAlloy += propeties;
 		
         try {
-	         File file = new File("src\\Output\\codeAlloy.als");
+	         File file = new File("src/Output/codeAlloy.als");
 	         if (!file.exists()) {
 	            file.createNewFile();
 	         } 
