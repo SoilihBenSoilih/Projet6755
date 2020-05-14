@@ -1,0 +1,2 @@
+assert AllStatesSource { all s : State | some t : Transition | t.source = s }
+check AllStatesSource for 20

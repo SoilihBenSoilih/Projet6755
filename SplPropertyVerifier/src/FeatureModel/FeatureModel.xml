@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>   
+    <features name="Wash">
+            <feature>Delay</feature>
+            <feature>Heat</feature>
+            <feature>Dry</feature>        
+    </features> 
+	<constraints>
+		<rule>
+			<conj>
+				<disj>
+					<var>Delay</var>
+					<var>Heat</var>
+				</disj>
+				<not>
+					<conj>
+						<var>Delay</var>
+						<var>Heat</var>
+					</conj>
+				</not>
+			</conj>
+		</rule>
+	</constraints>
+</featureModel>

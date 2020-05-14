@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping>
+    <map start="startWash" end="endWash">Wash</map>
+    <map start="startPrewash" end="endPrewash">Heat</map>
+    <map start="startPrewash" end="endPrewash">Delay</map>
+    <map start="startDrying" end="endDrying">Dry</map>
+</mapping>
